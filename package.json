@@ -1,0 +1,15 @@
+{
+  "name": "live-chatting-app",
+  "version": "1.0.0",
+  "description": "this is realtime chat application",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "devesh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.5.3"
+  }
+}
