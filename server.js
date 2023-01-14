@@ -7,7 +7,7 @@ const http = require('http').createServer(app);
 const users = [];
 
 //getting a port ready for the server 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 app.use(express.static(__dirname + '/public'));
 
@@ -21,7 +21,6 @@ app.get('/', (req, res) => {
 http.listen(port, () => {
   console.log(`server is running at port ${port}`);
 });
-
 
 
 io.on('connection', (socket) => {
